@@ -38,21 +38,19 @@
     />
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <!-- Header Section -->
       <header>
         <div class="header-content">
-          <div class="row">
-            <div class="col-md-10">
-              Welcome To <span class="highlight">UPEX MOVE:</span> 15+ Years Experience | <a href="#"> How To Find Us </a> |
-              <a href="#">Give Feedback</a>
-            </div>
+          <div>
+            Welcome To <span class="highlight">UPEX MOVE:</span> 15+ Years Experience | <a href="#"> How To Find Us </a> |
+            <a href="#">Give Feedback</a>
+          </div>
 
-            <div class="col-md-2">
-              <a href="#"><i class="socials1 fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="socials1 fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="socials1 fa-brands fa-twitter"></i></a>
-            </div>
+          <div>
+            <a href="#"><i class="socials1 fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="socials1 fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="socials1 fa-brands fa-twitter"></i></a>
           </div>
         </div>
       </header>
@@ -60,7 +58,13 @@
       <!-- Navigation Section -->
       <nav>
         <div class="nav-content">
-          <div class="nav-logo">UPEX MOVE</div>
+          <div class="nav-logo">
+            <img
+              src="./assets/Logo.png"
+              alt="Upex Move Logo"
+              width="100%"
+            />
+          </div>
           <ul class="nav-headers">
             <li class="nav-item"><a href="./index.html">Home</a></li>
             <li class="nav-item"><a href="./about.html">About Us</a></li>
@@ -76,47 +80,68 @@
       </nav>
 
       <!-- Hero Section -->
-      <section class="hero">
-        <div class="hero-background">
-          <div class="hero-content">
-            <div class="hero-contact">
-              <div class="col-md-4">
-                <i class="contacts1 fa-solid fa-phone-volume"></i>
+      <section id="hero">
+        <div class="hero-content">
+          <div class="hero-contact">
+            <div class="hero-contact-icon">
+              <img
+                src="./assets/Phone.png"
+                alt=""
+                height="64"
+              />
+              <div class="hero-contact-text">
                 <h6>Call Us</h6>
                 <p><a href="tel:+977011234567">01 1234 567</a></p>
               </div>
-              <div class="col-md-4">
-                <i class="contacts1 fa-solid fa-envelope"></i>
+            </div>
+            <div class="hero-contact-icon">
+              <img
+                src="./assets/Mail.png"
+                alt=""
+                height="64"
+              />
+              <div class="hero-contact-text">
                 <h6>Email Us</h6>
                 <p><a href="mailto:upexmove@gmail.com">upexmove@gmail.com</a></p>
               </div>
-              <div class="col-md-4">
-                <i class="contacts1 fa-solid fa-location-dot"></i>
+            </div>
+            <div class="hero-contact-icon">
+              <img
+                src="./assets/Map.png"
+                alt=""
+                height="64"
+              />
+              <div class="hero-contact-text">
                 <h6>Find Us</h6>
                 <p><a href=".footer-content">Brisbane QLD 4217</a></p>
               </div>
             </div>
-            <div class="hero-text">
-              <h1>Moving homes or offices?<br />We handle it all with ease.</h1>
-              <p>We offer a range of services including packing, moving, unpacking,and storage solutions to meet your specific needs.</p>
-              <button>BOOK NOW</button>
-              <button>Discover More</button>
+          </div>
+          <div class="hero-text">
+            <h1>Moving Homes or Offices? <br />We Handle it All With Ease.</h1>
+            <p>
+              We offer a range of services including packing, moving, unpacking,and storage <br />
+              solutions to meet your specific needs.
+            </p>
+            <div>
+              <button class="hero-button button1">Book Now</button>
+              <button class="hero-button button2">Discover More</button>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Our Features Section -->
-      <section class="features">
+      <section id="features">
         <div class="features-content">
-          <h2 class="featues-header">Our Features</h2>
+          <h2 class="features-header">Our Features</h2>
           <div class="row">
             <div class="col-md-2">
-              <i class="features-icon bi bi-box-seam"></i>
+              <i class="features-icon bi bi-boxes"></i>
               <p class="features-list">All Items Covered</p>
             </div>
             <div class="col-md-2">
-              <i class="features-icon bi bi-basket2"></i>
+              <i class="features-icon bi bi-basket3"></i>
               <p class="features-list">Carry With Care</p>
             </div>
             <div class="col-md-2">
@@ -124,15 +149,15 @@
               <p class="features-list">Pre Packing</p>
             </div>
             <div class="col-md-2">
-              <i class="features-icon bi bi-shield-check"></i>
+              <i class="features-icon bi bi-patch-check"></i>
               <p class="features-list">Full Insured</p>
             </div>
             <div class="col-md-2">
-              <i class="features-icon bi bi-briefcase"></i>
+              <i class="features-icon bi bi-people"></i>
               <p class="features-list">Commercial</p>
             </div>
             <div class="col-md-2">
-              <i class="features-icon bi bi-house"></i>
+              <i class="features-icon bi bi-house-door"></i>
               <p class="features-list">Residential</p>
             </div>
           </div>
@@ -140,62 +165,58 @@
       </section>
 
       <!-- About Us Section -->
-      <section class="about-us">
-        <div class="about-us-background">
-          <div class="about-us-content">
-            <div class="row">
-              <div class="col-md-6">
-                <h3 class="about-us-header1">About Upex</h3>
-                <h1 class="about-us-header2">Moving & Storage<br />Services</h1>
-                <p class="about-us-text1">
-                  Reliable solutions for smooth transitions. We provide packing & unpacking, commercial and residential relocation. Our experienced
-                  team can help you.
-                </p>
-                <p class="about-us-text2">
-                  Our movers are trained to handle your belongings with the utmost care, ensuring they arrive at your new location in perfect
-                  condition. We believe in providing transparent pricing and outstanding customer service, making us the preferred choice for many
-                  homeowners and businesses.
-                </p>
-                <div class="row">
-                  <div class="col-md-6">
-                    <i class="about-us-icons bi bi-clock"></i>
-                    <p class="about-us-text2">On Time</p>
-                  </div>
-                  <div class="col-md-6">
-                    <i class="about-us-icons bi bi-currency-dollar"></i>
-                    <p class="about-us-text2">Free Estimates</p>
-                  </div>
-                  <div class="col-md-6">
-                    <i class="about-us-icons bi bi-house"></i>
-                    <p class="about-us-text2">For All Your Home</p>
-                  </div>
-                  <div class="col-md-6">
-                    <i class="about-us-icons bi bi-check-circle"></i>
-                    <p class="about-us-text2">Guarantee</p>
-                  </div>
+      <section id="about-us">
+        <div class="about-us-content">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="about-us-header1">About Upex</h3>
+              <h1 class="about-us-header2">Moving & Storage<br />Service</h1>
+              <p class="about-us-text1">
+                Reliable solutions for smooth transitions. We provide packing & <br />unpacking, commercial and residential relocation. Our
+                experienced <br />
+                team can help you.
+              </p>
+              <p class="about-us-text2">
+                Our movers are trained to handle your belongings with the utmost care, ensuring <br />they arrive at your new location in perfect
+                condition. We believe in providing <br />transparent pricing and outstanding customer service, making us the preferred <br />choice
+                for many homeowners and businesses.
+              </p>
+              <div class="row">
+                <div class="about-us-items col-md-6">
+                  <i class="about-us-icons bi bi-clock-history"></i>
+                  <p class="about-us-text3">On Time</p>
                 </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <button>Read More</button>
-                  </div>
-                  <div class="col-md-6">
-                    <p><span class="about-us-year">15+</span><br />Years of Moving Service</p>
-                  </div>
+                <div class="about-us-items col-md-6">
+                  <i class="about-us-icons bi bi-cash-coin"></i>
+                  <p class="about-us-text3">Free Estimates</p>
+                </div>
+                <div class="about-us-items col-md-6">
+                  <i class="about-us-icons bi bi-house-door"></i>
+                  <p class="about-us-text3">For All Your Home</p>
+                </div>
+                <div class="about-us-items col-md-6">
+                  <i class="about-us-icons bi bi-check-circle"></i>
+                  <p class="about-us-text3">Guarantee</p>
                 </div>
               </div>
-              <div class="col-md-6 about-us-image">
-                <img
-                  src=""
-                  alt="..."
-                />
+              <div class="about-us-items">
+                <button class="about-us-button">Read More</button>
+                <p><span class="about-us-year">15+</span><br />Years of Moving Service</p>
               </div>
+            </div>
+            <div class="col-md-6 about-us-image">
+              <img
+                src="./assets/About-Image.jpg"
+                alt="Wrapped Packages"
+                height="700px"
+              />
             </div>
           </div>
         </div>
       </section>
 
       <!-- Our Services Section -->
-      <section class="our-services">
+      <section id="our-services">
         <div class="our-services-content">
           <h3 class="our-services-header1">Our Services</h3>
           <h1 class="our-services-header2">Moving Services For<br />Every Need</h1>
@@ -232,7 +253,7 @@
       </section>
 
       <!-- Contact Form Section -->
-      <section class="contact-form">
+      <section id="contact-form">
         <div class="contact-form-background">
           <div class="contact-form-content">
             <div class="row">
@@ -341,7 +362,7 @@
       </section>
 
       <!-- Testimonial Section -->
-      <section class="testimonial">
+      <section id="testimonial">
         <div class="testimonial-background">
           <div class="testimonial-content">
             <h6 class="testimonial-header1">Testimonial</h6>
@@ -385,7 +406,7 @@
       </section>
 
       <!-- Our Projects Section -->
-      <section class="our-projects">
+      <section id="our-projects">
         <div class="our-projects-content">
           <div class="row">
             <div class="col-md-6">
@@ -430,16 +451,16 @@
       </section>
 
       <!-- FAQ Section -->
-      <section class="faq">
+      <section id="faq">
         <div class="faq-content">
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-11">
               <h1 class="faq-header">Have Questions About Moving?</h1>
               <p class="faq-text">
                 Whether You’re Planning a Residential Move OR a Commercial Relocation <br />Our Team Is Ready To Provide You With Your Happiest Move.
               </p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-1">
               <button class="faq-button">Contact Us</button>
             </div>
           </div>
@@ -504,17 +525,16 @@
           </div>
           <hr />
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-11">
               <p class="footer-text">Copyright &copy; 2025 <span class="highlight">UPEX MOVE</span>. All Rights Reserved.</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-1">
               <p class="footer-text">Designed By</p>
             </div>
           </div>
         </div>
       </footer>
     </div>
-
     <!-- Bootstrap Link -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
