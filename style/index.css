@@ -8,10 +8,6 @@
   font-size: 1em;
 }
 
-body {
-  height: 100vh;
-}
-
 /* Header Section */
 .header-content {
   background: #f3f3f3;
@@ -395,6 +391,14 @@ body {
   text-transform: uppercase;
 }
 
+/* More specific selectors for form controls */
+input.form-control:focus,
+select.form-control:focus {
+  border-color: #176460 !important;
+  box-shadow: 0 0 0 0.25rem rgba(23, 100, 96, 0.25) !important;
+  outline: 0 !important;
+}
+
 .contact-form-item {
   position: relative;
   margin-bottom: 8px;
@@ -406,6 +410,46 @@ body {
   top: 70%;
   transform: translateY(-50%);
   color: #777;
+}
+
+.contact-form-icons-arrow1 {
+  position: absolute;
+  left: 220px;
+  top: 70%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.contact-form-icons-arrow2 {
+  position: absolute;
+  right: 30px;
+  top: 70%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.contact-form-icons-size {
+  position: absolute;
+  left: 220px;
+  top: 70%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.contact-form-icons-date {
+  position: absolute;
+  right: 31px;
+  top: 68%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+select:invalid {
+  color: #777;
+}
+
+option {
+  color: #000;
 }
 
 .contact-form-button-container {
