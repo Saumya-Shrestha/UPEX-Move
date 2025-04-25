@@ -710,9 +710,6 @@ option {
 }
 
 /* Responsive Style */
-@media only screen and (max-width: 1024px) {
-}
-
 @media only screen and (max-width: 920px) {
   /* Adjust padding for all sections */
   .header-content,
@@ -751,6 +748,7 @@ option {
 }
 
 @media only screen and (max-width: 768px) {
+  /* Global Styles */
   button {
     font-size: 0.8em !important;
     padding: 4px 16px !important;
@@ -761,15 +759,28 @@ option {
     height: auto;
   }
 
-  /* Header Section */
+  /* Common Section Padding */
+  .header-content,
+  .nav-content,
+  .hero-content,
+  .features-content,
+  .about-us-content,
+  .our-services-content,
+  .contact-form-content,
+  .testimonial-content,
+  .our-projects-content,
+  .faq-content,
+  .footer-content {
+    padding: 24px 40px;
+  }
+
+  /* Header and Navigation */
   .header-content {
     flex-direction: column;
     gap: 4px;
     text-align: center;
-    padding: 24px 40px;
   }
 
-  /* Navigation Section */
   .nav-headers,
   .nav-button {
     display: none;
@@ -786,7 +797,6 @@ option {
   /* Hero Section */
   .hero-content {
     height: auto;
-    padding: 24px 40px;
   }
 
   .hero-contact {
@@ -802,57 +812,29 @@ option {
     margin-bottom: 24px;
   }
 
-  /* Our Features Section */
-  .features-content {
-    padding: 24px 40px;
-  }
-
-  .features-header {
-    font-size: 1.2em;
-    margin: 12px 0;
-  }
-
-  .features-icon {
-    font-size: 1.5em;
-    margin: 12px 0;
-  }
-
-  .features-list {
-    font-size: 0.9em;
-  }
-
-  /* About section */
-  .about-us-content {
-    padding: 24px 40px;
-  }
-
-  .about-us-header1 {
+  /* Section Headers */
+  .features-header,
+  .about-us-header1,
+  .our-services-header1,
+  .testimonial-header1 {
     font-size: 1em;
-    margin-bottom: 8px;
+    margin: 12px 0;
     text-align: center;
   }
 
-  .about-us-header2 {
+  .about-us-header2,
+  .our-services-header2,
+  .testimonial-header2 {
     font-size: 1.2em;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
     text-align: center;
   }
 
-  .about-us-text1 {
-    font-size: 0.9em;
-    margin-bottom: 8px;
-    text-align: justify;
-  }
-
-  .about-us-text2 {
-    font-size: 0.9em;
-    margin-bottom: 8px;
-    text-align: justify;
-  }
-
-  .about-us-items {
-    margin: 8px 0;
-    font-size: 0.9em;
+  /* Icons */
+  .features-icon,
+  .our-services-icons {
+    font-size: 1.5em;
+    margin-bottom: 12px;
   }
 
   .about-us-icons {
@@ -860,8 +842,39 @@ option {
     margin-right: 8px;
   }
 
-  .about-us-text3 {
-    margin: 1px 0;
+  /* Text Elements */
+  .features-list,
+  .about-us-text1,
+  .about-us-text2,
+  .about-us-text3,
+  .our-services-text,
+  .testimonial-text,
+  .faq-text {
+    font-size: 0.9em;
+    margin-bottom: 12px;
+  }
+
+  .about-us-text1,
+  .about-us-text2 {
+    text-align: justify;
+  }
+
+  /* Cards and Containers */
+  .our-services-card,
+  .testimonial-card {
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 24px;
+  }
+
+  .our-services-header3 {
+    font-size: 1em;
+    margin-bottom: 12px;
+  }
+
+  /* About Us Section*/
+  .about-us-items {
+    margin: 8px 0;
     font-size: 0.9em;
   }
 
@@ -877,46 +890,7 @@ option {
     display: none;
   }
 
-  /* Our Services Section */
-  .our-services-content {
-    padding: 24px 40px;
-  }
-
-  .our-services-header1 {
-    font-size: 1em;
-    margin: 8px 0;
-  }
-
-  .our-services-header2 {
-    font-size: 1.2em;
-    margin-bottom: 24px;
-  }
-
-  .our-services-card {
-    padding: 20px;
-    margin-bottom: 24px;
-  }
-
-  .our-services-icons {
-    font-size: 1.5em;
-    margin-bottom: 12px;
-  }
-
-  .our-services-header3 {
-    font-size: 1em;
-    margin-bottom: 12px;
-  }
-
-  .our-services-text {
-    font-size: 0.9em;
-    margin-bottom: 12px;
-  }
-
   /* Form Section */
-  .contact-form-content {
-    padding: 30px 40px;
-  }
-
   .contact-form-header {
     color: white;
     font-size: 1em;
@@ -931,53 +905,24 @@ option {
     font-size: 0.9em;
   }
 
-  .contact-form-icons-arrow1 {
-    left: 268px;
-    top: 35%;
-  }
-
-  .contact-form-icons-arrow2 {
-    top: 85%;
-  }
-
+  .contact-form-icons-arrow1,
   .contact-form-icons-size {
     left: 268px;
     top: 35%;
   }
 
+  .contact-form-icons-arrow2,
   .contact-form-icons-date {
-    right: 30px;
     top: 85%;
   }
 
+  .contact-form-icons-date {
+    right: 30px;
+  }
+
   /* Testimonial Section */
-  .testimonial-content {
-    padding: 24px 40px;
-  }
-
-  .testimonial-header1 {
-    font-size: 1em;
-    margin: 12px 0;
-  }
-
-  .testimonial-header2 {
-    font-size: 1.2em;
-    margin-bottom: 24px;
-  }
-
-  .testimonial-card {
-    padding: 20px;
-    width: 80%;
-    margin-bottom: 24px;
-  }
-
   .testimonial-star {
     color: #ffff00;
-    margin-bottom: 12px;
-  }
-
-  .testimonial-text {
-    font-size: 0.9em;
     margin-bottom: 12px;
   }
 
@@ -986,10 +931,6 @@ option {
   }
 
   /* Our Projects Section */
-  .our-projects-content {
-    padding: 24px 40px;
-  }
-
   .our-projects-container {
     display: flex;
     flex-direction: column;
@@ -1001,11 +942,11 @@ option {
   }
 
   .our-projects-header1 {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   .our-projects-header2 {
-    font-size: 1.2em;
+    font-size: 2em;
   }
 
   .our-projects-image {
@@ -1014,7 +955,6 @@ option {
 
   /* FAQ Section */
   .faq-content {
-    padding: 24px 40px;
     flex-direction: column;
     text-align: center;
   }
@@ -1023,13 +963,9 @@ option {
     font-size: 1.2em;
   }
 
-  .faq-text {
-    font-size: 0.9em;
-  }
-
   /* Footer Section */
   .footer-content {
-    padding: 24px 40px 0 40px;
+    padding: 24px 40px 0;
   }
 
   .footer-header {
