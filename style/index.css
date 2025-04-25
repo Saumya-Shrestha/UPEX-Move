@@ -370,7 +370,8 @@
   background: white;
   border-radius: 8px;
   padding: 24px 32px;
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   position: relative;
   bottom: 16px;
 }
@@ -380,7 +381,8 @@
   top: 8px;
   z-index: 1;
   background: #176460;
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   border-radius: 8px 8px 0 0;
 }
 
