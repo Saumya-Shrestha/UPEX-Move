@@ -322,6 +322,7 @@
   margin-bottom: 48px;
   text-align: center;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.3s ease;
 }
 
 .our-services-icons {
@@ -391,7 +392,6 @@
   text-transform: uppercase;
 }
 
-/* More specific selectors for form controls */
 input.form-control:focus,
 select.form-control:focus {
   border-color: #176460 !important;
@@ -513,6 +513,7 @@ option {
   border-radius: 8px;
   margin-bottom: 48px;
   text-align: left;
+  transition: all 0.3s ease;
 }
 
 .testimonial-card.card1,
@@ -576,6 +577,7 @@ option {
   width: 100%;
   height: 250px;
   border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .our-projects-header1 {
@@ -610,6 +612,14 @@ option {
   height: 250px;
   object-fit: cover;
   border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.our-services-card:hover,
+.testimonial-card:hover,
+.our-projects-container:hover,
+.our-projects-image:hover {
+  transform: translateY(-5px);
 }
 
 .our-projects-content .row {
