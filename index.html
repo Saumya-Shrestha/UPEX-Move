@@ -38,12 +38,12 @@
     />
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
       <!-- Header Section -->
       <header>
         <div class="header-content">
           <div>
-            Welcome To <span class="highlight">UPEX MOVE:</span> 15+ Years Experience | <a href="#"> How To Find Us </a> |
+            Welcome To <span class="highlight">UPEX MOVE</span>: 15+ Years Experience | <a href="#"> How To Find Us </a> |
             <a href="#">Give Feedback</a>
           </div>
 
@@ -172,14 +172,13 @@
               <h3 class="about-us-header1">About Upex</h3>
               <h1 class="about-us-header2">Moving & Storage<br />Service</h1>
               <p class="about-us-text1">
-                Reliable solutions for smooth transitions. We provide packing & <br />unpacking, commercial and residential relocation. Our
-                experienced <br />
-                team can help you.
+                Reliable solutions for smooth transitions. We provide packing & unpacking, commercial and residential relocation. Our experienced team
+                can help you.
               </p>
               <p class="about-us-text2">
-                Our movers are trained to handle your belongings with the utmost care, ensuring <br />they arrive at your new location in perfect
-                condition. We believe in providing <br />transparent pricing and outstanding customer service, making us the preferred <br />choice
-                for many homeowners and businesses.
+                Our movers are trained to handle your belongings with the utmost care, ensuring they arrive at your new location in perfect condition.
+                We believe in providing transparent pricing and outstanding customer service, making us the preferred choice for many homeowners and
+                businesses.
               </p>
               <div class="row">
                 <div class="about-us-items col-md-6">
@@ -204,11 +203,13 @@
                 <p><span class="about-us-year">15+</span><br />Years of Moving Service</p>
               </div>
             </div>
-            <div class="col-md-6 about-us-image">
+            <div class="col-md-6">
               <img
                 src="./assets/About-Image.jpg"
                 alt="Wrapped Packages"
-                height="700px"
+                height="620px"
+                width="100%"
+                class="about-us-image"
               />
             </div>
           </div>
@@ -222,27 +223,39 @@
           <h1 class="our-services-header2">Moving Services For<br />Every Need</h1>
           <div class="row">
             <div class="col-md-4">
-              <div class="card">
-                <i class="our-services-icons bi bi-check-circle"></i>
+              <div class="our-services-card">
+                <i class="our-services-icons fa-solid fa-couch"></i>
                 <h6 class="our-services-header3">Furniture Removing</h6>
-                <p class="our-services-text">We specialize in removing your furniture with utmost care and efficiency.</p>
-                <button class="our-services-button">View More</button>
+                <p class="our-services-text">
+                  We specialize in providing efficient and reliable furniture removal services for both residential and commercial clients.
+                </p>
+                <div>
+                  <button class="our-services-button">View More</button>
+                </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card">
-                <i class="our-services-icons bi bi-check-circle"></i>
+              <div class="our-services-card">
+                <i class="our-services-icons fa-solid fa-truck-fast"></i>
                 <h6 class="our-services-header3">Loading And Unloading</h6>
-                <p class="our-services-text">Expert team for fast and safe loading/unloading services.</p>
-                <button class="our-services-button">View More</button>
+                <p class="our-services-text">
+                  We specialize in providing efficient and reliable loading and unloading services for both residential and commercial clients.
+                </p>
+                <div>
+                  <button class="our-services-button">View More</button>
+                </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card">
-                <i class="our-services-icons bi bi-check-circle"></i>
+              <div class="our-services-card">
+                <i class="our-services-icons fa-solid fa-warehouse"></i>
                 <h6 class="our-services-header3">Storage Services</h6>
-                <p class="our-services-text">Safe and secure storage for all your belongings.</p>
-                <button class="our-services-button">View More</button>
+                <p class="our-services-text">
+                  We specialize in providing efficient and reliable storage services for both residential and commercial clients.
+                </p>
+                <div>
+                  <button class="our-services-button">View More</button>
+                </div>
               </div>
             </div>
           </div>
@@ -254,14 +267,14 @@
 
       <!-- Contact Form Section -->
       <section id="contact-form">
-        <div class="contact-form-background">
-          <div class="contact-form-content">
-            <div class="row">
-              <div class="col-md-6">
+        <div class="contact-form-content">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-form-header-background">
+                <h2 class="contact-form-header">Get In Touch</h2>
+              </div>
+              <div class="form-background">
                 <form>
-                  <div class="contact-form-header-background">
-                    <h2 class="contact-form-header">Get In Touch</h2>
-                  </div>
                   <div class="contact-form-item">
                     <label for="fullName"></label>
                     <input
@@ -301,7 +314,7 @@
                         id="movingFrom"
                         placeholder="Moving From"
                       />
-                      <i class="contact-form-icons fa-solid fa-arrow-right"></i>
+                      <!-- <i class="contact-form-icons fa-solid fa-arrow-right"></i> -->
                     </div>
                     <div class="col-md-6">
                       <label for="movingTo"></label>
@@ -311,7 +324,7 @@
                         id="movingTo"
                         placeholder="Moving To"
                       />
-                      <i class="contact-form-icons fa-solid fa-arrow-left"></i>
+                      <!-- <i class="contact-form-icons fa-solid fa-arrow-left"></i> -->
                     </div>
                   </div>
                   <div class="contact-form-item row">
@@ -333,7 +346,7 @@
                         <option value="1">Medium</option>
                         <option value="2">Large</option>
                       </select>
-                      <i class="contact-form-icons fa-solid fa-caret-down"></i>
+                      <!-- <i class="contact-form-icons fa-solid fa-caret-down"></i> -->
                     </div>
                     <div class="col-md-6">
                       <label for="movingDate"></label>
@@ -345,15 +358,12 @@
                         onfocus="(this.type='date')"
                         onblur="(this.type='text')"
                       />
-                      <i class="contact-form-icons fa-solid fa-calendar"></i>
+                      <!-- <i class="contact-form-icons fa-solid fa-calendar"></i> -->
                     </div>
                   </div>
-                  <button
-                    type="submit"
-                    class="form-button"
-                  >
-                    Submit Now
-                  </button>
+                  <div class="contact-form-button-container">
+                    <button class="contact-form-button">Submit Now</button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -363,44 +373,65 @@
 
       <!-- Testimonial Section -->
       <section id="testimonial">
-        <div class="testimonial-background">
-          <div class="testimonial-content">
-            <h6 class="testimonial-header1">Testimonial</h6>
-            <h2 class="testimonial-header2">What Our Customer <br />Saying About Us</h2>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="testimonial-stars">
-                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
-                  </div>
-                  <p class="testimonial-text">
-                    Had a great time and it was a stress-free day, they are really professional and careful with everything. Highly recommended.
-                  </p>
-                  <h5 class="testimonial-author">Allen S</h5>
+        <div class="testimonial-content">
+          <h6 class="testimonial-header1">Testimonial</h6>
+          <h2 class="testimonial-header2">What Our Customer <br />Saying About Us</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="testimonial-card card1">
+                <div>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
                 </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="testimonial-stars">
-                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
-                  </div>
-                  <p class="testimonial-text">Perfect! We gave them our Facebook Marketplace pick up list and they got it all done!</p>
-                  <h5 class="testimonial-author">Charlie Capel</h5>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="testimonial-stars">
-                    <span>&#9733; &#9733; &#9733; &#9733; &#9733;</span>
-                  </div>
-                  <p class="testimonial-text">Great service, arrived on time, very friendly and efficient. Highly recommended.</p>
-                  <h5 class="testimonial-author">Benjamin Teboul</h5>
-                </div>
+                <p class="testimonial-text">
+                  Had a great time and it was a stress-free day, they are really professional and careful with everything. Highly recommended.
+                </p>
+                <h5 class="testimonial-author">
+                  <div class="testimonial-user-section"><i class="testimonial-user fa-solid fa-user"></i>Allen S</div>
+                  <i class="fa-regular fa-message"></i>
+                </h5>
               </div>
             </div>
-            <div>
-              <button class="testimonial-button">View All</button>
+            <div class="col-md-4">
+              <div class="testimonial-card card2">
+                <div>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">Perfect! We gave them our Facebook Marketplace pick up list and they got it all done!</p>
+                <h5 class="testimonial-author">
+                  <div class="testimonial-user-section"><i class="testimonial-user fa-solid fa-user"></i>Charlie Capel</div>
+                  <i class="fa-regular fa-message"></i>
+                </h5>
+              </div>
             </div>
+            <div class="col-md-4">
+              <div class="testimonial-card card3">
+                <div>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                  <i class="testimonial-star fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  Great service, arrived on time, very friendly and efficient. Highly recommended to anyone moving houses.
+                </p>
+                <h5 class="testimonial-author">
+                  <div class="testimonial-user-section"><i class="testimonial-user fa-solid fa-user"></i>Benjamin Teboul</div>
+                  <i class="fa-regular fa-message"></i>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="testimonial-button">View All</button>
           </div>
         </div>
       </section>
@@ -410,40 +441,47 @@
         <div class="our-projects-content">
           <div class="row">
             <div class="col-md-6">
-              <h6 class="our-projects-header1">Our Projects</h6>
-              <h2 class="our-projects-header2">Explore Our Incredible Works</h2>
-              <button class="our-projects-button">View All Projects</button>
+              <div class="our-projects-container">
+                <h6 class="our-projects-header1">Our Projects</h6>
+                <h2 class="our-projects-header2">Explore Our <br />Incredible Works</h2>
+                <button class="our-projects-button">View All Projects</button>
+              </div>
             </div>
-            <div class="col-md-3 our-projects-image">
+            <div class="col-md-3">
               <img
-                src=""
-                alt="..."
+                src="./assets/Project1.jpg"
+                alt="Project 1"
+                class="our-projects-image"
               />
             </div>
-            <div class="col-md-3 our-projects-image">
+            <div class="col-md-3">
               <img
-                src=""
-                alt="..."
+                src="./assets/Project2.jpg"
+                alt="Project 2"
+                class="our-projects-image"
               />
             </div>
           </div>
           <div class="row">
-            <div class="col-md-4 our-projects-image">
+            <div class="col-md-4">
               <img
-                src=""
-                alt="..."
+                src="./assets/Project3.jpg"
+                alt="Project 3"
+                class="our-projects-image"
               />
             </div>
-            <div class="col-md-4 our-projects-image">
+            <div class="col-md-4">
               <img
-                src=""
-                alt="..."
+                src="./assets/Project4.jpg"
+                alt="Project 4"
+                class="our-projects-image"
               />
             </div>
-            <div class="col-md-4 our-projects-image">
+            <div class="col-md-4">
               <img
-                src=""
-                alt="..."
+                src="./assets/Project5.jpg"
+                alt="Project 5"
+                class="our-projects-image"
               />
             </div>
           </div>
@@ -453,16 +491,14 @@
       <!-- FAQ Section -->
       <section id="faq">
         <div class="faq-content">
-          <div class="row">
-            <div class="col-md-11">
-              <h1 class="faq-header">Have Questions About Moving?</h1>
-              <p class="faq-text">
-                Whether You’re Planning a Residential Move OR a Commercial Relocation <br />Our Team Is Ready To Provide You With Your Happiest Move.
-              </p>
-            </div>
-            <div class="col-md-1">
-              <button class="faq-button">Contact Us</button>
-            </div>
+          <div>
+            <h1 class="faq-header">Have Questions About Moving?</h1>
+            <p class="faq-text">
+              Whether You’re Planning A Residential Move Or A Commercial Relocation <br />Our Team Is Ready To Provide You With Your Happiest Move.
+            </p>
+          </div>
+          <div>
+            <button class="faq-button">Contact Us</button>
           </div>
         </div>
       </section>
@@ -472,14 +508,29 @@
         <div class="footer-content">
           <div class="row">
             <div class="col-md-3">
-              <h1 class="footer-header">About Us</h1>
+              <h5 class="footer-header">About Us</h5>
               <p class="footer-text">
                 From packing and unpacking to <br />furniture disassembly and <br />transportation, we handle every <br />detail with care.
               </p>
               <div>
-                <a href="#"><i class="socials2 fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="socials2 fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="socials2 fa-brands fa-twitter"></i></a>
+                <a href="#"
+                  ><img
+                    src="./assets/Facebook.png"
+                    alt="Facebook"
+                    class="socials2"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./assets/Instagram.png"
+                    alt="Instagram"
+                    class="socials2"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./assets/Twitter.png"
+                    alt="Twitter"
+                    class="socials2"
+                /></a>
               </div>
             </div>
             <div class="col-md-3">
@@ -495,7 +546,7 @@
             </div>
             <div class="col-md-3">
               <h5 class="footer-header">Get In Touch</h5>
-              <ul class="footer-contact-links">
+              <ul class="footer-links">
                 <li class="footer-items">
                   <i class="contacts2 fa-solid fa-phone-volume"></i>
                   <a href="tel:+977011234567">01 1234 567</a>
@@ -535,6 +586,7 @@
         </div>
       </footer>
     </div>
+
     <!-- Bootstrap Link -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
