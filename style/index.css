@@ -711,7 +711,7 @@ option {
 
 /* Responsive Style */
 @media only screen and (max-width: 920px) {
-  /* Adjust padding for all sections */
+  /* Common Section Padding */
   .header-content,
   .nav-content,
   .hero-contact,
@@ -725,7 +725,7 @@ option {
     padding: 24px 40px;
   }
 
-  /* Hero text adjustments */
+  /* Hero Section */
   .hero-text h1 {
     font-size: 3em;
   }
@@ -734,14 +734,14 @@ option {
     font-size: 1.1em;
   }
 
-  /* Adjust form width */
+  /* Form Section */
   .form-background,
   .contact-form-header-background {
     width: 100%;
     max-width: 550px;
   }
 
-  /* Projects section */
+  /* Our Projects Section */
   .our-projects-image {
     height: 200px;
   }
@@ -750,8 +750,8 @@ option {
 @media only screen and (max-width: 768px) {
   /* Global Styles */
   button {
-    font-size: 0.8em !important;
-    padding: 4px 16px !important;
+    font-size: 0.9em !important;
+    padding: 8px 24px !important;
   }
 
   img {
