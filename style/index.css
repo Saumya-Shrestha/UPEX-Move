@@ -8,6 +8,10 @@
   font-size: 1em;
 }
 
+button {
+  padding: 16px 24px !important;
+}
+
 /* Header Section */
 .header-content {
   background: #f3f3f3;
@@ -84,7 +88,7 @@
   background: #176460;
   border: none;
   color: #fff;
-  padding: 8px 24px;
+  padding: 16px 24px;
   border-radius: 8px;
   text-transform: uppercase;
 }
@@ -596,7 +600,7 @@ option {
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .our-projects-button {
@@ -751,7 +755,7 @@ option {
   /* Global Styles */
   button {
     font-size: 0.9em !important;
-    padding: 8px 24px !important;
+    padding: 16px 24px !important;
   }
 
   img {
