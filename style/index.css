@@ -99,7 +99,7 @@ button {
 
 /* Hero Section */
 .hero-content {
-  background: url(../assets/hero-background.jpg);
+  background: url(../assets/Hero-background.jpg);
   background-size: cover;
   height: 830px;
   display: grid;
