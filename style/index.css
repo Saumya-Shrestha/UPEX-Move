@@ -424,7 +424,7 @@ select.form-control:focus {
 
 .contact-form-icons-arrow1 {
   position: absolute;
-  left: 220px;
+  right: 30px;
   top: 70%;
   transform: translateY(-50%);
   color: #777;
@@ -440,7 +440,7 @@ select.form-control:focus {
 
 .contact-form-icons-size {
   position: absolute;
-  left: 220px;
+  right: 30px;
   top: 70%;
   transform: translateY(-50%);
   color: #777;
